@@ -153,3 +153,94 @@ img {
   width: 80%;      /* 画面幅の80%にする */
   margin: 0 auto;  /* 中央寄せ */
 }
+/* --- MEMBER SECTION ALL STYLES --- */
+
+.member-section {
+  padding: 60px 20px;
+  max-width: 1200px; /* 全体幅を少し広げます */
+  margin: 0 auto;
+}
+
+.member-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* カード自体の枠組み（大きめに調整） */
+.member-card {
+  flex: 1 1 300px;
+  max-width: 360px;             /* 横幅枠組みを大きめに設定 */
+  background-color: #111;       /* ダークグレー背景 */
+  border: 1px solid #222;       /* 薄い枠線 */
+  border-radius: 12px;          /* 角丸 */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* 画像を表示する枠組エリア */
+.member-img {
+  width: 100%;
+  height: 380px;                /* 画像枠の高さ（好みで 320px 〜 400px などに調整可） */
+  background-color: #1a1a1a;    /* 画像がない状態でも枠がわかるダミー色 */
+}
+
+/* 画像自体の収まり設定 */
+.member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;            /* 縦横比を崩さず枠いっぱいに綺麗に収める設定 */
+  display: block;
+}
+
+/* カード内のテキストエリア */
+.member-info {
+  padding: 20px;
+}
+
+/* 名前グループとパート名を横並びにする */
+.member-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* 漢字とローマ字読みを縦並びにする */
+.name-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-group h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.2;
+}
+
+/* 漢字の真下の薄いローマ字読み */
+.name-en {
+  font-size: 11px;
+  color: #666;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* パート名（Gt / Vo など） */
+.member-info .part {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: normal;
+  padding-top: 2px;
+}
+
+/* 説明文 */
+.member-bio {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+  margin: 0;
+}
