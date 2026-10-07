@@ -140,3 +140,16 @@ body {
   background-color: #000000;
   border-bottom: 1px solid #1a1a1a; /* セクション間の控えめな区切り線 */
 }
+
+/* 画面幅に合わせて綺麗に収める設定 */
+img {
+  max-width: 45%; /* 親要素からはみ出さない */
+  height: auto;    /* 縦横比を保つ */
+  display: block;
+}
+
+/* 特定の画像だけ大きさを変えたい場合 */
+.band-photo {
+  width: 80%;      /* 画面幅の80%にする */
+  margin: 0 auto;  /* 中央寄せ */
+}
